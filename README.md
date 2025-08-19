@@ -27,6 +27,7 @@ Security:
 - Restricted AWS S3 bucket access/policy
 
 Future Improvements:
+
 1.Add a contact form using AWS Lambda, API Gateway, and AWS SES
 
--I plan on updating this website to keep my resume up-to-date and implement new AWS services into my project.
+-**I plan on updating this website to keep my resume up-to-date and implement new AWS services into my project.**
