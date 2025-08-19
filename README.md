@@ -27,4 +27,5 @@ Enabled HTTPS by getting a SSL/TLS certificate
 Restricted AWS S3 bucket access/policy
 
 Future Improvements:
+
 1.Add a contact form using AWS Lambda, API Gateway, and AWS SES
