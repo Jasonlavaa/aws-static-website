@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Jason Lavenant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container about-container">
+    <header>
+      <h1>About Me</h1>
+      <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
+    </header>
 
+    <div class="profile-section">
+      <img src="/images/IMG_5072.png" alt="Jason Lavenant" class="profile-photo" />
+      <div class="bio">
+        <h2>Jason Lavenant</h2>
+        <p>Hello! I'm a passionate IT professional transitioning into cloud computing. I enjoy learning new technologies and working on hands-on cloud projects.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <h2>Background</h2>
+      <p>I bring several years of experience in IT helpdesk roles, where I honed my skills in 
+        troubleshooting, customer support, and system administration. 
+        I’m currently transitioning into cloud computing, with a focus on AWS. 
+        I'm actively working on AWS certifications and building hands-on projects to 
+        deepen my knowledge and demonstrate my capabilities in cloud technologies.</p>
+    </section>
+
+    <section class="section">
+      <h2>Interests</h2>
+      <ul>
+          <li>Cloud Computing & AWS</li>
+        <li>Formula 1 and Motorsports</li>
+        <li>Fitness</li>
+        <li>Biking & hiking</li>
+        <li>Traveling</li>
+        <li>Learning new languages</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:Jasonlavenant@gmail.com">Jasonlavenant@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Jasonlavaa" target="_blank">https://github.com/Jasonlavaa</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/jason-lavenant/" target="_blank">linkedin.com/in/jason-lavenant/</a></p>
+    </section>
+
+    <footer>
+      <p>Jason Lavenant • © 2025</p>
+    </footer>
+  </div>
+  
+    <div class="back-button">
+  <a href="index.html">⬅️ Back to Home</a>
+    </div>
+  
+    <script>
+  const toggleBtn = document.getElementById("theme-toggle");
+  const currentTheme = localStorage.getItem("theme");
+
+  if (currentTheme === "dark") {
+    document.body.classList.add("dark-mode");
+    toggleBtn.textContent = "☀️ Light Mode";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+
+    toggleBtn.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  });
+    </script>
+  
+</body>
+</html>
