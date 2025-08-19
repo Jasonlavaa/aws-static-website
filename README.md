@@ -23,9 +23,8 @@ Deployment steps:
   -Pointed DNS Records to CloudFront distrubution
 
 Security:
-
-Enabled HTTPS by getting a SSL/TLS certificate
-Restricted AWS S3 bucket access/policy
+- Enabled HTTPS by getting a SSL/TLS certificate
+- Restricted AWS S3 bucket access/policy
 
 Future Improvements:
 
