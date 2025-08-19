@@ -1,1 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume - Jason Lavenant</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Jason Lavenant</h1>
+        <p>IT Helpdesk Specialist | IS Analyst</p>
+        <p>
+          <a href="mailto:Jasonlavenant@gmail.com" target="_blank">Jasonlavenant@gmail.com</a> | (210) 254-4259 | San Antonio, Texas
+        </p>
+        <p><a href="https://www.linkedin.com/in/jason-lavenant/" target="_blank">Linkedin</a> | <a href="about.html" target="_blank">About me</a> | <a href="websitedocumentation.html" target="_blank">Website Deployment Documentation</a></p>
+        
+          <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
+      </header>
+
+      <section class="section">
+        <h2>Summary</h2>
+        <p>
+          Motivated IT professional transitioning into AWS cloud computing. Strong background in troubleshooting, customer
+          support, and system administration. Actively pursuing AWS certifications and hands-on experience.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li>AWS (EC2, S3, IAM)</li>
+          <li>Microsoft 365 applications</li>
+          <li>Networking & DNS</li>
+          <li>Python & Bash Scripting</li>
+          <li>Helpdesk Ticketing Systems</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Experience</h2>
+        <h3>IT Helpdesk Specialist/IS Analyst — PFS Group</h3>
+        <p><em>Dec 2023 – Present</em></p>
+        <ul>
+          <li>Resolved over 1500+ technical support tickets with 95% satisfaction rating.</li>
+          <li>Provided Tier 1 & Tier 2 support for Windows OS.</li>
+          <li>Created SOPs and automated daily tasks using PowerShell and Bash.</li>
+          <li>Provide actionable insight to Account Executives and Client Managers to communicate findings and resolve</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Education & Certifications</h2>
+        <h3>Education</h3>
+        <ul>
+          <li>Bachelor of Science, Computer Information Systems</li>
+          <li>University of the Incarnate Word, San Antonio, TX - May 2023</li>
+        </ul>
+        <h3>Certifications</h3>
+        <ul>
+          <li>AWS Certified Cloud Practitioner - Amazon Web Services, Jul 2025</li>
+          <li>AWS Certified Solutions Architect - Associate | In-Progress</li>
+          <li>CompTIA A+ Certified</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>More</h2>
+        <ul class="skills">
+        <li><a href="about.html" target="_blank">About me</a></li>
+        <li><a href="websitedocumentation.html" target="_blank">Website Deployment Documentation</a></li>
+          </ul>
+      </section>
+
+      <footer>
+        <p>Jason Lavenant • © 2025</p>
+      </footer>
+    </div>
+      
+        <script>
+  const toggleBtn = document.getElementById("theme-toggle");
+  const currentTheme = localStorage.getItem("theme");
+
+  if (currentTheme === "dark") {
+    document.body.classList.add("dark-mode");
+    toggleBtn.textContent = "☀️ Light Mode";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    const isDark = document.body.classList.contains("dark-mode");
+
+    toggleBtn.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  });
+        </script>
+      
+  </body>
+</html>
 
