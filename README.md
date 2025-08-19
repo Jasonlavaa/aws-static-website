@@ -1,13 +1,13 @@
-# aws-static-website
+ # aws-static-website
 
 This project is a **personal static website** hosted on **AWS**.  
 It serves as both a **resume/portfolio** and a **learning project** to practice cloud deployment using core AWS services.
 
 AWS Services used:
-- **Amazon S3 – static web hosting for HTML, CSS, and images
-- **Amazon CloudFront – CDN for global delivery, HTTPS Support, and SEO optimization
-- **AWS Certificate Manager (ACM) – SSL/TLS certificate for secure browsing
-- **Amazon Route 53 – custom domain DNS management
+- Amazon S3 – static web hosting for HTML, CSS, and images
+- Amazon CloudFront – CDN for global delivery, HTTPS Support, and SEO optimization
+- AWS Certificate Manager (ACM) – SSL/TLS certificate for secure browsing
+- Amazon Route 53 – custom domain DNS management
 
 Deployment steps:
 1. Create an S3 bucket
